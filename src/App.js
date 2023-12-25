@@ -4,7 +4,7 @@ import AppRoutes from './Routes/Routes';
 
 function App() {
   return (
-    <div className="bg-slate-900 text-white w-screen h-screen">
+    <div className="bg-slate-800 text-white w-screen h-auto">
     <AppRoutes />
     </div>
   );

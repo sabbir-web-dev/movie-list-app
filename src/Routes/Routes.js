@@ -4,7 +4,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Error from '../Pages/Error'
 import Navber from '../Components/Navber/Navber'
 import MovieView from '../Features/MovieView'
-import AddMovie from '../Pages/AddMovie'
+import ToopRated from '../Pages/RopRated'
+import Upcomming from '../Pages/Upcomming'
 
 function AppRoutes() {
   return (
@@ -12,7 +13,8 @@ function AppRoutes() {
     <Navber />
       <Routes>
         <Route path='/' element={<MovieView/>}/>
-        <Route path='/add-movie' element={<AddMovie/>}/>
+        <Route path='/top-rated' element={<ToopRated/>}/>
+        <Route path='/up-comming' element={<Upcomming/>}/>
         <Route path='*' element={<Error />}/>
       </Routes>
     </BrowserRouter>

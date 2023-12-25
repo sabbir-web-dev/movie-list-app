@@ -3,5 +3,12 @@
 @tailwind utilities;
 .active{
   color:rgb(74, 222, 128, var(--tw-text-opacity));
+}
+body{
+  background-color: #233554;
+}
 
+.card-wrap {
+  @apply px-4 pt-5 flex justify-center flex-wrap gap-5;
+  flex: 1 1 180px; /* Apply flex properties separately */
 }
