@@ -6,7 +6,7 @@ function Card({ movie }) {
   const { title, vote_average, poster_path, popularity } = movie;
 
   return (
-    <div className="max-w-52 overflow-hidde bg-slate-900 rounded-lg cursor-pointer">
+    <div className="card">
       <div className="">
         <img
           className="rounded-t-lg"

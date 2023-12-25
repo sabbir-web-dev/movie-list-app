@@ -17,6 +17,7 @@ function ToopRated() {
     <div>
       {isLoadding && <h4>Lodding...</h4>}
       {error && <h4>{error}</h4>}
+      <h5 className="px-4 py-5 font-bold text-xl font-mono">Top Rated</h5>
       <section className='card-wrap'>
         {movies.results && 
           movies.results.map(movie => <Card key={movie.id} movie={movie}></Card>)

@@ -18,11 +18,12 @@ function MovieView() {
     <div>
       {isLoadding && <h5>Loadding....</h5>}
       {error && <h5>{error}</h5>}
+      <h5 className="px-4 py-5 font-bold text-xl font-mono">Popular</h5>
       <section className="card-wrap">
           {movies.results &&
             movies.results.map((movie) =><Card key={movie.id} movie={movie}></Card>)
           }
-      </section>
+      </section> 
     </div>
   );
 }

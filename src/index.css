@@ -1,3 +1,5 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,6 +11,14 @@ body{
 }
 
 .card-wrap {
-  @apply px-4 pt-5 flex justify-center flex-wrap gap-5;
-  flex: 1 1 180px; /* Apply flex properties separately */
+  @apply px-4 flex justify-center flex-wrap gap-5;
+  flex: 1 1 180px; 
 }
+.card {
+  @apply max-w-52 overflow-hidden bg-slate-900 rounded-lg cursor-pointer duration-300 transition-transform;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
